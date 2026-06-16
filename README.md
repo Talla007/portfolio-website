@@ -184,4 +184,4 @@ Website ini mendukung 4 ukuran layar:
 
 ---
 
-Built with ❤️ by Atalla Ahsan Indrayana
+Built by Atalla Ahsan Indrayana

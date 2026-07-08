@@ -1,68 +1,69 @@
-# 🛡️ Portfolio Website — Atalla Ahsan Indrayana
+# Portfolio Website — Atalla Ahsan Indrayana
 
-Website portfolio profesional bertema **Cyber Security** dengan dark mode premium,
-animasi modern, dan desain responsif.
+Dokumentasi proyek website portfolio profesional yang dirancang khusus dengan tema **Cyber Security**. Proyek ini mengimplementasikan tampilan dark mode premium, animasi interaktif modern, dan tata letak yang sepenuhnya responsif.
 
 ---
 
-## 📂 Struktur File
+## Struktur File
+
+Proyek ini memiliki struktur direktori yang efisien dan modular sebagai berikut:
 
 ```
 portfolio-website/
-├── index.html    ← Struktur halaman (HTML5)
-├── style.css     ← Styling visual lengkap (CSS3)
-├── script.js     ← Logika interaktif (JavaScript ES6+)
-└── README.md     ← Dokumentasi ini
+├── index.html    - Struktur halaman (HTML5)
+├── style.css     - Styling visual dan desain sistem (CSS3)
+├── script.js     - Logika interaksi dan animasi (JavaScript ES6+)
+└── README.md     - Dokumentasi proyek
 ```
 
 ---
 
-## 🌐 Bahasa & Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 ### 1. HTML5 (HyperText Markup Language)
 
 **File:** `index.html`
 
-HTML adalah bahasa markup standar untuk membuat struktur halaman web.
-Versi ke-5 (HTML5) memperkenalkan elemen semantik yang lebih bermakna.
+HTML5 digunakan untuk membangun struktur dasar halaman web dengan menerapkan elemen semantik untuk meningkatkan aksesibilitas dan optimasi SEO.
 
-**Fitur HTML5 yang digunakan:**
-| Fitur | Contoh | Penjelasan |
+**Fitur HTML5 yang diterapkan:**
+
+| Fitur | Contoh | Keterangan |
 |---|---|---|
-| Semantic Elements | `<nav>`, `<section>`, `<footer>` | Memberikan makna pada struktur halaman |
-| Meta Tags | `<meta name="description">` | SEO & media sosial (Open Graph, Twitter Card) |
-| Form Elements | `<input>`, `<select>`, `<textarea>` | Form kontak interaktif |
-| SVG Inline | `<svg>...</svg>` | Ikon vektor yang ringan & scalable |
-| Data Attributes | `data-category`, `data-count` | Menyimpan data kustom di elemen HTML |
-| ARIA Labels | `aria-label="Toggle menu"` | Aksesibilitas untuk screen reader |
+| Elemen Semantik | `<nav>`, `<section>`, `<footer>` | Memberikan struktur dokumen yang terstandarisasi dan mudah dibaca oleh mesin pencari |
+| Meta Tags | `<meta name="description">` | Mengoptimalkan SEO dan metadata media sosial (Open Graph, Twitter Card) |
+| Elemen Formulir | `<input>`, `<select>`, `<textarea>` | Menyediakan input interaktif pada formulir kontak |
+| SVG Inline | `<svg>...</svg>` | Menyajikan ikon vektor beresolusi tinggi dengan beban pemuatan minimal |
+| Data Attributes | `data-category`, `data-count` | Menyimpan data kustom langsung pada elemen HTML untuk diolah JavaScript |
+| Label ARIA | `aria-label="Toggle menu"` | Meningkatkan aksesibilitas bagi pengguna dengan alat bantu pembaca layar (screen reader) |
 
 ---
 
 ### 2. CSS3 (Cascading Style Sheets)
 
-**File:** `style.css` (~1200 baris)
+**File:** `style.css`
 
-CSS adalah bahasa untuk mendesain tampilan visual halaman web.
-CSS3 menambahkan fitur canggih seperti animasi, gradient, dan flexbox.
+CSS3 bertanggung jawab penuh atas estetika visual halaman. Implementasinya mencakup penggunaan variabel (custom properties) untuk mempermudah pemeliharaan serta implementasi visual effects premium.
 
-**Fitur CSS3 yang digunakan:**
+**Fitur CSS3 yang diterapkan:**
 
-| Fitur | Contoh | Penjelasan |
+| Fitur | Contoh | Keterangan |
 |---|---|---|
-| Custom Properties | `--accent: #10b981` | Variabel CSS untuk konsistensi warna & spacing |
-| Flexbox | `display: flex` | Layout 1 dimensi (horizontal/vertikal) |
-| CSS Grid | `display: grid` | Layout 2 dimensi untuk card grid |
-| Conic Gradient | `conic-gradient(...)` | Membuat lingkaran progress skill |
-| Backdrop Filter | `backdrop-filter: blur(20px)` | Efek kaca (glassmorphism) pada navbar |
-| Keyframe Animations | `@keyframes float` | Animasi floating blobs di hero |
-| Transitions | `transition: all 300ms ease` | Animasi halus saat hover |
-| Media Queries | `@media (max-width: 768px)` | Responsive design untuk mobile/tablet |
-| Custom Scrollbar | `::-webkit-scrollbar` | Scrollbar yang sesuai tema dark |
-| Pseudo Elements | `::before`, `::after` | Dekorasi visual tanpa HTML tambahan |
-| Aspect Ratio | `aspect-ratio: 16/9` | Rasio tetap untuk thumbnail portfolio |
-| Color Functions | `rgba()` | Warna transparan untuk glow effects |
+| Custom Properties | `--accent: #10b981` | Variabel CSS untuk memastikan konsistensi warna, font, dan jarak (spacing) |
+| Flexbox | `display: flex` | Mengatur tata letak satu dimensi (baris atau kolom) secara dinamis |
+| CSS Grid | `display: grid` | Mengatur tata letak dua dimensi pada grid kartu portofolio dan layanan |
+| Conic Gradient | `conic-gradient(...)` | Membuat representasi visual melingkar pada statistik kemampuan (skills progress) |
+| Backdrop Filter | `backdrop-filter: blur(20px)` | Menerapkan efek kaca transparan (glassmorphism) pada bilah navigasi |
+| Keyframe Animations | `@keyframes float` | Menghasilkan pergerakan elemen dekoratif yang halus di latar belakang |
+| Transitions | `transition: all 300ms ease` | Memberikan transisi transisi halus saat pengguna berinteraksi dengan elemen (hover) |
+| Media Queries | `@media (max-width: 768px)` | Menyesuaikan tampilan agar optimal pada perangkat mobile dan tablet |
+| Custom Scrollbar | `::-webkit-scrollbar` | Menyelaraskan tampilan scrollbar bawaan browser dengan tema gelap website |
+| Pseudo Elements | `::before`, `::after` | Menambahkan dekorasi visual tambahan tanpa mengotori struktur HTML |
+| Aspect Ratio | `aspect-ratio: 16/9` | Mempertahankan rasio dimensi visual pada thumbnail portofolio |
+| Color Functions | `rgba()` | Menghasilkan efek transparansi dan efek cahaya (glow effect) |
 
 **Arsitektur CSS:**
+
 ```
 :root (Design Tokens)
   └── Base Reset & Globals
@@ -75,113 +76,113 @@ CSS3 menambahkan fitur canggih seperti animasi, gradient, dan flexbox.
 
 ---
 
-### 3. JavaScript ES6+ (ECMAScript 2015+)
+### 3. JavaScript (ES6+)
 
-**File:** `script.js` (~240 baris)
+**File:** `script.js`
 
-JavaScript adalah bahasa pemrograman untuk membuat halaman web interaktif.
-ES6+ adalah versi modern dengan syntax yang lebih bersih dan powerful.
+JavaScript digunakan untuk menambahkan interaktivitas dinamis pada website dengan menggunakan standar ES6+ guna menghasilkan performa yang optimal.
 
-**Fitur JavaScript yang digunakan:**
+**Fitur JavaScript yang diterapkan:**
 
-| Fitur | Contoh | Penjelasan |
+| Fitur | Contoh | Keterangan |
 |---|---|---|
-| Arrow Functions | `(e) => { ... }` | Sintaks fungsi yang ringkas |
-| `const` / `let` | `const navbar = ...` | Deklarasi variabel modern (block-scoped) |
-| Template Literals | `` `Hello ${name}` `` | String interpolasi untuk mailto body |
-| IntersectionObserver | `new IntersectionObserver()` | Deteksi elemen masuk viewport (scroll animation) |
-| DOM API | `querySelector`, `classList` | Manipulasi elemen HTML |
-| Event Listeners | `addEventListener("click")` | Menangani interaksi user |
-| FormData API | `new FormData(form)` | Membaca data form secara programatis |
-| requestAnimationFrame | `requestAnimationFrame(step)` | Animasi counter yang smooth (60fps) |
-| CSS Custom Properties | `style.setProperty("--percent")` | Mengubah variabel CSS dari JavaScript |
-| Passive Listeners | `{ passive: true }` | Optimasi performa scroll |
+| Arrow Functions | `(e) => { ... }` | Penulisan sintaks fungsi yang lebih ringkas dan modern |
+| Deklarasi Variabel | `const`, `let` | Mengelola cakupan variabel (block-scoped) secara aman |
+| Template Literals | `` `Hello ${name}` `` | Mempermudah manipulasi string secara dinamis |
+| IntersectionObserver | `new IntersectionObserver()` | Memicu animasi masuk (reveal animation) saat elemen masuk ke viewport |
+| DOM API | `querySelector`, `classList` | Mengakses dan memanipulasi elemen HTML secara dinamis |
+| Event Listeners | `addEventListener("click")` | Menangkap dan merespons interaksi pengguna |
+| FormData API | `new FormData(form)` | Mengumpulkan data input formulir secara terstruktur |
+| requestAnimationFrame | `requestAnimationFrame(step)` | Mengoptimalkan rendering animasi angka counter agar berjalan pada 60fps |
+| CSS Custom Properties | `style.setProperty("--percent")` | Memperbarui variabel CSS secara dinamis untuk grafik progress |
+| Passive Listeners | `{ passive: true }` | Meningkatkan performa scroll pada perangkat mobile |
 
 **Modul Fungsional:**
+
 ```
 script.js
-├── 1. Navbar Scroll Effect (background blur saat scroll)
-├── 2. Mobile Menu Toggle (hamburger → X)
-├── 3. Smooth Scroll (navigasi anchor)
-├── 4. Scroll Reveal (animasi muncul saat scroll)
-├── 5. Stat Counter (animasi angka naik)
-├── 6. Skill Circles (animasi progress conic-gradient)
-├── 7. Portfolio Filter (filter berdasarkan kategori)
-├── 8. Contact Form (submit → mailto)
-├── 9. Toast Notification (popup feedback)
-├── 10. Parallax Blobs (ikut gerakan mouse)
-└── 11. Typing Effect (ketikan di hero)
+├── 1. Navbar Scroll Effect (efek blur pada latar belakang navigasi saat scroll)
+├── 2. Mobile Menu Toggle (kontrol menu hamburger responsif)
+├── 3. Smooth Scroll (navigasi perpindahan halaman yang halus)
+├── 4. Scroll Reveal (animasi pemunculan elemen saat di-scroll)
+├── 5. Stat Counter (animasi perhitungan angka statistik)
+├── 6. Skill Circles (animasi visual progress kemampuan)
+├── 7. Portfolio Filter (penyaringan kategori proyek portofolio)
+├── 8. Contact Form (mekanisme pengiriman pesan melalui formulir kontak)
+├── 9. Toast Notification (notifikasi melayang untuk umpan balik pengguna)
+├── 10. Parallax Blobs (efek interaksi elemen latar belakang dengan gerakan mouse)
+└── 11. Typing Effect (animasi teks mengetik pada bagian hero)
 ```
 
 ---
 
-### 4. Teknologi Pendukung
+### 4. Sumber Daya Eksternal
 
-| Teknologi | Sumber | Fungsi |
+| Sumber Daya | Penyedia | Fungsi |
 |---|---|---|
-| **Google Fonts** | `fonts.googleapis.com` | Font "Inter" — tipografi modern & profesional |
-| **SVG Icons** | Inline SVG | Ikon vektor ringan (Lucide icon style) |
+| Google Fonts | `fonts.googleapis.com` | Penyedia tipografi utama menggunakan font "Inter" |
+| SVG Icons | Kode Inline | Ikon berbasis vektor yang ringan dan responsif (gaya Lucide) |
 
 ---
 
-## 🎨 Design System
+## Design System
 
 ### Palet Warna
 ```
-Background:  #09090b → #18181b → #27272a → #3f3f46
-Text:        #ffffff → #d4d4d8 → #a1a1aa → #71717a
-Accent:      #059669 → #10b981 → #34d399 (emerald)
+Latar Belakang:  #09090b → #18181b → #27272a → #3f3f46
+Teks:            #ffffff → #d4d4d8 → #a1a1aa → #71717a
+Aksen:           #059669 → #10b981 → #34d399 (emerald)
 ```
 
 ### Efek Visual Premium
-- **Glassmorphism** — Navbar dengan backdrop-blur transparan
-- **Gradient Blobs** — Animasi floating di hero section
-- **Grid Overlay** — Pattern grid halus di background hero
-- **Glow Effects** — Shadow emerald pada hover buttons
-- **Conic Gradient Skills** — Circular progress bars
-- **Scroll Reveal** — Elemen muncul dengan animasi saat di-scroll
-- **Parallax** — Blobs bergerak mengikuti mouse
-- **Micro-interactions** — Hover scale, color transitions, focus glow
+- **Glassmorphism:** Bilah navigasi dengan efek blur latar belakang transparan.
+- **Gradient Blobs:** Animasi elemen melayang yang dinamis pada bagian utama (hero section).
+- **Grid Overlay:** Pola garis grid halus untuk memperkuat tema teknologi/keamanan siber.
+- **Glow Effects:** Efek pancaran cahaya emerald saat tombol disorot (hover).
+- **Conic Gradient Skills:** Grafik kemajuan melingkar yang dinamis.
+- **Scroll Reveal:** Pemunculan elemen dengan animasi transisi saat halaman digulir.
+- **Parallax:** Elemen dekoratif latar belakang yang bergerak mengikuti pergerakan kursor mouse.
+- **Micro-interactions:** Efek pembesaran skala (scale), transisi warna, serta fokus berpendar pada elemen interaktif.
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan Proyek
 
-### Cara Paling Mudah
-1. Buka folder `portfolio-website/`
-2. Double-click file `index.html`
-3. Website akan terbuka di browser default
+### Metode Langsung
+1. Buka direktori proyek `portfolio-website/`.
+2. Klik dua kali pada file `index.html`.
+3. Halaman website secara otomatis akan dimuat pada peramban (browser) utama Anda.
 
-### Dengan Live Server (VS Code)
-1. Install extension "Live Server" di VS Code
-2. Klik kanan `index.html` → "Open with Live Server"
-3. Browser akan terbuka otomatis dengan hot-reload
+### Menggunakan Live Server (VS Code)
+1. Pasang ekstensi "Live Server" melalui VS Code Marketplace.
+2. Klik kanan pada file `index.html` lalu pilih opsi "Open with Live Server".
+3. Halaman akan terbuka secara otomatis di browser dengan fitur pembaruan instan (hot-reload).
 
 ---
 
-## 📱 Responsive Design
+## Desain Responsif
 
-Website ini mendukung 4 ukuran layar:
+Website ini dirancang untuk beradaptasi secara optimal pada berbagai resolusi layar:
 
-| Breakpoint | Ukuran | Layout |
+| Tingkat Responsif | Resolusi | Karakteristik Tata Letak |
 |---|---|---|
-| Desktop | > 1024px | Grid 3 kolom, layout horizontal |
-| Tablet | ≤ 1024px | Grid 2 kolom, about vertical |
-| Mobile | ≤ 768px | Grid 1 kolom, hamburger menu |
-| Small Mobile | ≤ 480px | Full-width buttons, stacked stats |
+| Desktop | > 1024px | Grid 3 kolom, tata letak menyamping (horizontal) |
+| Tablet | ≤ 1024px | Grid 2 kolom, tata letak bio vertikal |
+| Mobile | ≤ 768px | Grid 1 kolom, navigasi berbasis menu hamburger |
+| Small Mobile | ≤ 480px | Tombol dengan lebar penuh, statistik tertumpuk secara vertikal |
 
 ---
 
-## 📋 Daftar Section
+## Struktur Halaman (Sections)
 
-1. **Navbar** — Fixed top, glassmorphism, hamburger mobile
-2. **Hero** — Nama, titel "Cyber Security", social links, CTA
-3. **Services** — 6 kartu layanan dengan hover effects
-4. **About Me** — Bio, statistik, skill circles
-5. **Portfolio** — 9 proyek dengan filter kategori
-6. **Contact** — Form kontak → mailto
-7. **Footer** — Credit line
+1. **Navbar:** Navigasi atas melayang, efek glassmorphism, menu hamburger untuk tampilan mobile.
+2. **Hero:** Penyebutan nama, keahlian "Cyber Security", tautan media sosial, serta tombol ajakan bertindak (CTA).
+3. **Services:** 6 kartu layanan utama dengan efek interaksi saat disorot.
+4. **About Me:** Profil singkat, statistik pencapaian, dan grafik keahlian interaktif.
+5. **Portfolio:** Galeri yang menampilkan 9 proyek terpilih dilengkapi fitur filter kategori.
+6. **Contact:** Formulir kontak interaktif terintegrasi dengan tautan kirim email.
+7. **Footer:** Bagian penutup yang memuat hak cipta dan kepemilikan karya.
 
 ---
 
-Built by Atalla Ahsan Indrayana
+Dikembangkan oleh Atalla Ahsan Indrayana

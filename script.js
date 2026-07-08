@@ -316,4 +316,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 80);
   }
 
+  /* ─────────────────────────────────────────────
+     12. CV MODAL
+     ───────────────────────────────────────────── */
+  const cvModalOverlay = document.getElementById("cv-modal-overlay");
+  const cvModalClose = document.getElementById("cv-modal-close");
+  const btnViewCv = document.getElementById("btn-view-cv");
+  const btnViewCvAbout = document.getElementById("btn-view-cv-about");
+
+  function openCvModal() {
+    cvModalOverlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeCvModal() {
+    cvModalOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if (btnViewCv) btnViewCv.addEventListener("click", openCvModal);
+  if (btnViewCvAbout) btnViewCvAbout.addEventListener("click", openCvModal);
+  if (cvModalClose) cvModalClose.addEventListener("click", closeCvModal);
+
+  if (cvModalOverlay) {
+    cvModalOverlay.addEventListener("click", (e) => {
+      if (e.target === cvModalOverlay) closeCvModal();
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && cvModalOverlay.classList.contains("active")) {
+      closeCvModal();
+    }
+  });
+
 });

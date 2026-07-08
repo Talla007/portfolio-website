@@ -141,16 +141,14 @@
                     </svg>
                     Hire Me
                 </a>
-                <a href="cv-atalla.jpg" download="CV-Atalla-Ahsan-Indrayana.jpg" class="btn btn-outline"
-                    id="btn-download-cv">
+                <button type="button" class="btn btn-outline" id="btn-view-cv">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                        <polyline points="7 10 12 15 17 10" />
-                        <line x1="12" x2="12" y1="15" y2="3" />
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
                     </svg>
-                    Download CV
-                </a>
+                    View CV
+                </button>
             </div>
         </div>
     </section>
@@ -281,16 +279,14 @@
                     <p>Alongside development, I enjoy exploring how security threats work to write secure and robust code. I am also active in campus organizations, particularly within the Faculty of Computer Science (BEM FIK UPNVJ).</p>
                     <p>I am actively seeking internship opportunities where I can apply my web development and security skills, contribute to real-world projects, and grow alongside tech industry professionals.</p>
 
-                    <a href="cv-atalla.jpg" download="CV-Atalla-Ahsan-Indrayana.jpg"
-                        class="btn btn-outline about-cv-btn" id="btn-download-cv-about">
+                    <button type="button" class="btn btn-outline about-cv-btn" id="btn-view-cv-about">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" x2="12" y1="15" y2="3" />
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
                         </svg>
-                        Download CV
-                    </a>
+                        View CV
+                    </button>
                 </div>
             </div>
 
@@ -684,6 +680,38 @@
             </p>
         </div>
     </footer>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CV MODAL                                    -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="cv-modal-overlay" id="cv-modal-overlay">
+        <div class="cv-modal">
+            <div class="cv-modal-header">
+                <h3 class="cv-modal-title">Curriculum Vitae</h3>
+                <div class="cv-modal-actions">
+                    <a href="cv-atalla.jpg" download="CV-Atalla-Ahsan-Indrayana.jpg" class="cv-modal-btn cv-modal-btn--download" id="btn-download-cv">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" x2="12" y1="15" y2="3" />
+                        </svg>
+                        Download
+                    </a>
+                    <button type="button" class="cv-modal-btn cv-modal-btn--close" id="cv-modal-close" aria-label="Close CV viewer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" x2="6" y1="6" y2="18" />
+                            <line x1="6" x2="18" y1="6" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="cv-modal-body">
+                <img src="cv-atalla.jpg" alt="CV Atalla Ahsan Indrayana" class="cv-modal-image" />
+            </div>
+        </div>
+    </div>
 
     <!-- Toast Notification -->
     <div class="toast" id="toast">

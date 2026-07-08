@@ -1,20 +1,3 @@
-/**
- * ═══════════════════════════════════════════════════════════════
- * PORTFOLIO WEBSITE — JavaScript (ES6+)
- * Atalla Ahsan Indrayana — Cyber Security & Developer
- * ═══════════════════════════════════════════════════════════════
- *
- * Bahasa: JavaScript (ECMAScript 2015+)
- * Fitur yang digunakan:
- *   - DOM Manipulation (querySelector, classList, addEventListener)
- *   - IntersectionObserver API (scroll reveal animations)
- *   - Event Delegation (portfolio filter)
- *   - Template Literals (mailto body)
- *   - Arrow Functions, const/let
- *   - requestAnimationFrame (smooth counter animation)
- * ═══════════════════════════════════════════════════════════════
- */
-
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ─────────────────────────────────────────────

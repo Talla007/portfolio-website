@@ -1006,7 +1006,7 @@ html {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -1017,6 +1017,9 @@ html {
   border: 1px solid var(--border);
   transition: all var(--transition-normal);
   cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .portfolio-card:hover {
@@ -1081,6 +1084,31 @@ html {
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
+}
+
+.portfolio-desc {
+  font-size: 0.8125rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.portfolio-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.tech-tag {
+  font-size: 0.6875rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.08);
+  color: var(--accent-light);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-card.hidden {
